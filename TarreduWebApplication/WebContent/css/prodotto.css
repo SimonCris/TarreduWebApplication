@@ -1,0 +1,623 @@
+@charset "UTF-8";
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+	z-index: 10;
+	top: 0px;
+	position: relative;
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+}
+
+.headerContainer {
+	text-align: center;
+}
+
+.headerContainer img {
+	z-index: 10;
+}
+
+.navbar {
+	top: 20%;
+	position: relative;
+	border-radius: 0;
+	z-index: 10;
+	box-shadow: 5px 4px 5px #000;
+	width: 100%;
+}
+
+.navbarOggetto {
+	z-index: 1;
+	height: 50px;
+}
+
+/* Bottone Laterale Menù */
+#mySidenav a {
+	position: fixed; /* Position them relative to the browser window */
+	left: -80px; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 12%; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: white; /* White text color */
+	border-radius: 0 5px 5px 0;
+	/* Rounded corners on the top right and bottom right side */
+	font-style: italic;
+	display: none;
+	z-index: 9999;
+}
+
+#mySidenav a:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#backToTopMenu {
+	top: 240px;
+	background-color: rgb(121, 4, 4);
+}
+
+#backToPage {
+	top: 310px;
+	background-color: rgb(121, 4, 4);
+}
+
+.mioSlider {
+border: 5px outset #bbb;
+	border-radius: 15px;
+}
+
+.jumbotron {
+	margin-bottom: 10;
+	margin-top: 10;
+	box-shadow: 5px 4px 5px #000;
+}
+
+.navbar .navbarOggetto:hover {
+	background-color: rgb(121, 4, 4);
+	border-bottom: 2px solid rgb(255, 255, 255);
+	box-shadow: 5px 4px 5px #000;
+}
+
+.affix {
+	top: 0;
+	width: 100%;
+}
+
+.affix+.container-fluid {
+	padding-top: 70px;
+}
+
+/* Sfondo della pagina */
+#bg {
+	position: fixed;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+/ /* Menu dei venditori */
+.dropdown-menu {
+	height: auto;
+	width: auto;
+}
+
+/* Carrello */
+.carrello {
+	background-color: rgb(121, 4, 4);
+}
+
+.navbarOggetto {
+	z-index: 1;
+	height: 50px;
+}
+
+.menuDestra li {
+	z-index: 1;
+}
+
+/* Nomi delle catergorie del menu prodotti */
+.NomiCategorie {
+	color: rgb(121, 4, 4);
+	font-family: "Century Gothic", Times, serif;
+}
+
+/* Singole categorie, marche e ambienti del menu prodotti */
+.oggettiCategorie {
+	color: rgb(34, 30, 30);
+	font-family: "Book Antiqua", Times, serif;
+	font-size: 15px;
+}
+
+.oggettiCategorie:hover {
+	color: rgb(121, 4, 4);
+}
+
+/* Le colonne del menu dei prodotti */
+#listaMenu {
+	height: 340px;
+	border-left: 1px solid rgb(109, 97, 97);
+}
+
+/* Quando passo sopra alle colonne del menu dei prodotti */
+#listaMenu:hover {
+	border-bottom: 2px solid rgb(255, 255, 255);
+	box-shadow: 5px 4px 5px #000;
+}
+
+
+
+/* Carousel */
+#myCarousel {
+	
+}
+
+/* Carrello */
+.product_name {
+	margin-left: 1%;
+}
+
+.separatore {
+	border: 2px;
+	width: 98%;
+	margin-left:1%;
+	margin-bottom:2%;
+	border-style: solid;
+	text-align: center;
+	
+}
+
+.menu_basso {
+	padding-top: 2%;
+}
+
+.checked {
+	color: yellow;
+}
+
+.descrizione {
+	padding-top: 5%;
+	padding-left: 3%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: italic;
+}
+
+.specifiche{
+	padding-left: 8%;
+	padding-bottom: 3%;
+	font-style: italic;
+	font-size: medium;
+	
+	
+}
+
+.descrizioneLaterale {
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: italic;
+	font-size: medium;
+	
+}
+
+
+.lista_venditori {
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.descrizione_bassa {
+	font-style: oblique;
+	font-weight: 400;
+}
+
+.button_carrello {
+	padding-top: 10%;
+}
+
+.button_favoriti {
+	padding-top: 10%;
+}
+
+.prezzo_prodotto {
+	font-size: large;
+	
+}
+
+.hr{
+	
+}
+
+tab-content {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 10px;
+}
+
+.nav-tabs {
+	margin-bottom: 2px;
+}
+
+.marca_prodotto {
+	padding: 1%;
+	font-style: oblique;
+	font-weight: 700;
+	font-size: medium;
+}
+
+.ambiente_prodotto {
+	padding: 1%;
+	font-style: italic;
+}
+
+.tipo_prodotto {
+	padding: 1%;
+}
+
+.valutazioni_prodotto {
+	padding: 2%;
+}
+
+a {
+	color: rgb(121, 4, 4)
+}
+
+/* Footer */
+footer {
+	background-color: #333333;
+	height: 200px;
+}
+
+.bottoneTornaSu {
+	text-align: center;
+	height: auto;
+	width: 100%;
+}
+
+/*Login finestra */
+
+/* Checkbox ricodami */
+.containerCheckbox {
+	display: inline;
+}
+
+/* Full-width input fields */
+.animate input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.buttonLog {
+	background-color: rgb(15, 160, 19);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	cursor: pointer;
+	width: 100%;
+}
+
+.buttonLog:hover {
+	box-shadow: 5px 4px 5px #000;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: rgb(121, 4, 4);
+	color: white;
+}
+
+.cancelbtn:hover {
+	box-shadow: 5px 4px 5px #000;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 9999;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height 
+    overflow: auto; */
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+	padding-top: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	text-align: center;
+	background-color: #ffffff;
+	margin: auto auto auto auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 5px outset rgb(121, 4, 4);
+	padding: 10px;
+	width: 30%;
+		height: 90%;
+		z-index: 9999;
+	/* Could be more or less, depending on screen size */
+}
+
+.containerModal label {
+	padding-left: 10px;
+}
+
+.containerModalBottom {
+	text-align: left;
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: rgb(121, 4, 4);
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@
+-webkit-keyframes animatezoom {from { -webkit-transform:scale(0)
+	
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes animatezoom {from { transform:scale(0)
+	
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+/*Registrati finestra */
+
+/* Checkbox ricodami */
+.containerRegistrazione {
+	display: inline;
+}
+
+/* Full-width input fields */
+.animateReg input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.buttonReg {
+	background-color: rgb(15, 160, 19);
+	color: white;
+	padding: 10px 18px;
+	margin: 8px 0;
+	cursor: pointer;
+	width: 40%;
+}
+
+.buttonReg:hover {
+	box-shadow: 5px 4px 5px #000;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtnReg {
+	width: auto;
+	padding: 10px 18px;
+	width: 40%;
+	background-color: rgb(121, 4, 4);
+	color: white;
+}
+
+.cancelbtnReg:hover {
+	box-shadow: 5px 4px 5px #000;
+}
+
+/* Center the image and position the close button */
+.imgcontainerReg {
+	text-align: right;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 10;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height 
+    overflow: auto; */
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+	padding-top: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	text-align: center;
+	background-color: #ffffff;
+	margin: auto auto auto auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 5px outset rgb(121, 4, 4);
+	padding: 10px;
+	width: 500px;
+	height: 90%;
+	/* Could be more or less, depending on screen size */
+}
+
+.containerReg {
+	height: 50%;
+	overflow: auto;
+}
+
+.containerModal label {
+	padding-left: 10px;
+}
+
+.containerRegButton {
+	text-align: center;
+}
+
+/* The Close Button (x) */
+.closeReg {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.closeReg:hover, .closeReg:focus {
+	color: rgb(121, 4, 4);
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animateReg {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@
+-webkit-keyframes animatezoom {from { -webkit-transform:scale(0)
+	
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes animatezoom {from { transform:scale(0)
+	
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+/* Form recensione */
+.containerFormRecensione textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+.containerFormRecensione {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+/* Checkbox valutazione */

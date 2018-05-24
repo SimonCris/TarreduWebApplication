@@ -1,0 +1,664 @@
+@charset "UTF-8";
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+header {
+	z-index: 10;
+	top: 0px;
+	position: relative;
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+}
+
+.headerContainer {
+	text-align: center;
+}
+
+.headerContainer img {
+	z-index: 10;
+}
+
+.navbar {
+	top: 20%;
+	position: relative;
+	border-radius: 0;
+	z-index: 10;
+	box-shadow: 5px 4px 5px #000;
+	width: 100%;
+}
+
+.navbarOggetto {
+	position: relative;
+	z-index: 0;
+	height: 50px;
+}
+
+/* Bottone Laterale Menù */
+#mySidenav a {
+	position: fixed; /* Position them relative to the browser window */
+	left: -60px; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 12%; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: white; /* White text color */
+	border-radius: 0 5px 5px 0;
+	/* Rounded corners on the top right and bottom right side */
+	font-style: italic;
+	display: none;
+	z-index: 9999;
+}
+
+#mySidenav a:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#backToTopMenu {
+	top: 240px;
+	background-color: rgb(121, 4, 4);
+}
+
+#backToPage {
+	top: 310px;
+	background-color: rgb(121, 4, 4);
+}
+
+/* Mouse che passa sulle voci del navbar */
+.navbar .navbarOggetto:hover {
+	background-color: rgb(121, 4, 4);
+	border-bottom: 2px solid rgb(255, 255, 255);
+	box-shadow: 5px 4px 5px #000;
+}
+
+.menuDestra li {
+	z-index: 0;
+}
+
+/* Per l'allineamento del navbar */
+.affix {
+	top: 0;
+	width: 100%;
+}
+
+.affix+.container-fluid {
+	padding-top: 70px;
+}
+
+#share-buttons img {
+	width: 60px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+}
+
+/* Slider */
+.jumbotron {
+	margin-top: 5%;
+	box-shadow: 5px 4px 5px #000;
+	background-size: cover;
+	position: relative;
+}
+
+.nomeProdottoCarousel {
+	font-style: italic;
+	color: rgb(121, 4, 4);
+	padding-bottom: 2%;
+}
+
+.nomiSezioniProdotti {
+	color: wheat;
+	font-family: "Century Gothic", Times, serif;
+	padding-left: 105px;
+	color: white;
+	text-shadow: 2px 2px 4px rgb(121, 4, 4);
+}
+
+/* Carrello */
+.carrello {
+	background-color: rgb(121, 4, 4);
+}
+
+/* Sfondo della pagina */
+#bg {
+	position: fixed;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+
+/* Menu dei venditori */
+.dropdown-menu {
+	height: auto;
+	width: auto;
+}
+
+/* Singolo prodotto in offerta */
+.inOfferta {
+	text-align: center;
+}
+
+.coupon {
+	border: 5px outset #bbb;
+	border-radius: 15px;
+	margin: 0 0;
+	max-width: 600px;
+	text-align: center;
+	background-color: white;
+	
+}
+
+.containerLogo {
+	padding: 2px 16px;
+	background-color: #f1f1f1;
+}
+
+.coupon img {
+	width: 99%;
+	height: 40%;
+}
+
+.containerTitoloETestoOfferta {
+	background-color: #f1f1f1;
+	padding: 5px;
+	height: 25%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: italic;
+}
+
+.nomeProdottoOfferta{
+	color: black;
+}
+
+.containerTitoloETesto {
+	background-color: #f1f1f1;
+	padding: 5px;
+	
+}
+
+.containerPrezzoEData {
+	background-color: rgb(121, 4, 4);
+	color: #f1f1f1;
+	padding: 3px;
+	padding-bottom: 35px;
+}
+
+.bottoneProdottoInOfferta {
+	padding-block-end: 5px;
+	float: right;
+}
+
+.titoloArticoloInOfferta {
+	color: rgb(121, 4, 4);
+}
+
+.prezzo {
+	font-style: italic;
+	background: white;
+	padding: 5px;
+	color: red;
+	font-size: medium;
+	border-radius: 5%;
+}
+
+/* Contorno della sezione dei prodotti piu visti */
+.prodottiPiuVisti {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.couponPiuVisto {
+	background-color: #eeeeee;
+	border-radius: 10px;
+	border-style: outset;
+}
+
+.couponPiuVisto img {
+	padding-top: 5%;
+	width: 83%;
+	height: 300px;
+	margin-left: 8.5%;
+}
+
+.titoloArticoloPiuVisto {
+	color: rgb(121, 4, 4);
+}
+
+.bottoneProdottoPiuVisto {
+	padding-block-end: 5px;
+	float: center;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+/* Footer */
+footer {
+	background-color: #333333;
+}
+
+.bottoneTornaSu {
+	height: 50px;
+	width: 100%;
+	padding: 15px;
+}
+
+/*Login finestra */
+
+/* Checkbox ricodami */
+.containerCheckbox {
+	display: inline;
+}
+
+/* Full-width input fields */
+.animate input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.buttonLog {
+	background-color: rgb(15, 160, 19);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	cursor: pointer;
+	width: 100%;
+}
+
+.buttonLog:hover {
+	box-shadow: 5px 4px 5px #000;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: rgb(121, 4, 4);
+	color: white;
+}
+
+.cancelbtn:hover {
+	box-shadow: 5px 4px 5px #000;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 10;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height 
+    overflow: auto; */
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+	padding-top: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	text-align: center;
+	background-color: #ffffff;
+	margin: auto auto auto auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 5px outset rgb(121, 4, 4);
+	padding: 10px;
+	/* Could be more or less, depending on screen size */
+	overflow: auto;
+}
+
+.containerModal label {
+	padding-left: 10px;
+}
+
+.containerModalBottom {
+	text-align: left;
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: rgb(121, 4, 4);
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@
+-webkit-keyframes animatezoom {from { -webkit-transform:scale(0)
+	
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes animatezoom {from { transform:scale(0)
+	
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+/*Registrati finestra */
+
+/* Checkbox ricodami */
+.containerRegistrazione {
+	display: inline;
+}
+
+/* Full-width input fields */
+.animateReg input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.buttonReg {
+	background-color: rgb(15, 160, 19);
+	color: white;
+	padding: 10px 18px;
+	margin: 8px 0;
+	cursor: pointer;
+	width: 40%;
+}
+
+.buttonReg:hover {
+	box-shadow: 5px 4px 5px #000;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtnReg {
+	width: auto;
+	padding: 10px 18px;
+	width: 40%;
+	background-color: rgb(121, 4, 4);
+	color: white;
+}
+
+.cancelbtnReg:hover {
+	box-shadow: 5px 4px 5px #000;
+}
+
+/* Center the image and position the close button */
+.imgcontainerReg {
+	text-align: right;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 9999;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height 
+    overflow: auto; */
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+	padding-top: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	text-align: center;
+	background-color: #ffffff;
+	margin: auto auto auto auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 5px outset rgb(121, 4, 4);
+	padding: 10px;
+	width: 30%;
+		height: 90%;
+		z-index: 9999;
+	/* Could be more or less, depending on screen size */
+}
+
+.containerReg {
+	height: 50%;
+	overflow: auto;
+}
+
+.containerModal label {
+	padding-left: 10px;
+}
+
+.containerRegButton {
+	text-align: center;
+}
+
+/* The Close Button (x) */
+.closeReg {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.closeReg:hover, .closeReg:focus {
+	color: rgb(121, 4, 4);
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animateReg {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@
+-webkit-keyframes animatezoom {from { -webkit-transform:scale(0)
+	
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes animatezoom {from { transform:scale(0)
+	
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+/* Hr */
+hr {
+	border: 1px solid rgb(255, 255, 255);
+	width: 87%;
+}
+
+/* Snackbar */
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+	visibility: hidden;
+	/* Hidden by default. Visible on click */
+	min-width: 250px;
+	/* Set a default minimum width */
+	margin-left: -125px;
+	/* Divide value of min-width by 2 */
+	background-color: #333;
+	/* Black background color */
+	color: #fff;
+	/* White text color */
+	text-align: center;
+	/* Centered text */
+	border-radius: 2px;
+	/* Rounded borders */
+	padding: 16px;
+	/* Padding */
+	position: fixed;
+	/* Sit on top of the screen */
+	z-index: 9999;
+	/* Add a z-index if needed */
+	left: 50%;
+	/* Center the snackbar */
+	bottom: 30px;
+	/* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+	visibility: visible;
+	/* Show the snackbar */
+	/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@
+-webkit-keyframes fadein {from { bottom:0;
+	opacity: 0;
+}
+
+to {
+	bottom: 30px;
+	opacity: 1;
+}
+
+}
+@
+keyframes fadein {from { bottom:0;
+	opacity: 0;
+}
+
+to {
+	bottom: 30px;
+	opacity: 1;
+}
+
+}
+@
+-webkit-keyframes fadeout {from { bottom:30px;
+	opacity: 1;
+}
+
+to {
+	bottom: 0;
+	opacity: 0;
+}
+
+}
+@
+keyframes fadeout {from { bottom:30px;
+	opacity: 1;
+}
+
+to {
+	bottom: 0;
+	opacity: 0;
+}
+}

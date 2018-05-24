@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>T'Arredu</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Registrazione</servlet-name>
+		<servlet-class>controller.Registrazione</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Registrazione</servlet-name>
+		<url-pattern>/registrazione</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegistrazioneVenditore</servlet-name>
+		<servlet-class>controller.RegistrazioneVenditore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrazioneVenditore</servlet-name>
+		<url-pattern>/registrazioneVenditore</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>VerificaEmail</servlet-name>
+		<servlet-class>controller.VerificaEmail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VerificaEmail</servlet-name>
+		<url-pattern>/verificaMail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>VerificaMailVenditore</servlet-name>
+		<servlet-class>controller.VerificaMailVenditore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VerificaMailVenditore</servlet-name>
+		<url-pattern>/verificaMailVenditore</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+		<servlet-name>AggiornaProdotto</servlet-name>
+		<servlet-class>controller.AggiornaProdotto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiornaProdotto</servlet-name>
+		<url-pattern>/aggiornaProdotto</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ModificaProdotto</servlet-name>
+		<servlet-class>controller.ModificaProdotto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificaProdotto</servlet-name>
+		<url-pattern>/modificaProdotto</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>controller.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ValidaCredenzialiLogin</servlet-name>
+		<servlet-class>controller.ValidaCredenzialiLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ValidaCredenzialiLogin</servlet-name>
+		<url-pattern>/validaCredenzialiLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ValidaCredenzialiVenditoreLogin</servlet-name>
+		<servlet-class>controller.ValidaCredenzialiVenditore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ValidaCredenzialiVenditoreLogin</servlet-name>
+		<url-pattern>/validaCredenzialiVenditoreLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetProdottoServlet</servlet-name>
+		<servlet-class>controller.GetProdottoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetProdottoServlet</servlet-name>
+		<url-pattern>/prodotto</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ProdottoGiaInPreferiti</servlet-name>
+		<servlet-class>controller.ProdottoGiaInPreferiti</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProdottoGiaInPreferiti</servlet-name>
+		<url-pattern>/prodottoGiaInPreferiti</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ProdottoGiaAConfronto</servlet-name>
+		<servlet-class>controller.ProdottoGiaAConfronto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProdottoGiaAConfronto</servlet-name>
+		<url-pattern>/prodottoGiaInConfronto</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>AggiungiPreferito</servlet-name>
+		<servlet-class>controller.AggiungiPreferito</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiungiPreferito</servlet-name>
+		<url-pattern>/aggiungiPreferito</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AggiungiAConfronto</servlet-name>
+		<servlet-class>controller.AggiungiAConfronto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiungiAConfronto</servlet-name>
+		<url-pattern>/aggiungiAConfronto</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AggiungiProdottoVenditore</servlet-name>
+		<servlet-class>controller.AggiungiProdottoVenditore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiungiProdottoVenditore</servlet-name>
+		<url-pattern>/aggiungiProdottoVenditore</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProdottoGiaInCarrello</servlet-name>
+		<servlet-class>controller.ProdottoGiaInCarrello</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProdottoGiaInCarrello</servlet-name>
+		<url-pattern>/prodottoGiaInCarrello</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AggiungiNelCarrello</servlet-name>
+		<servlet-class>controller.AggiungiNelCarrello</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiungiNelCarrello</servlet-name>
+		<url-pattern>/aggiungiNelCarrello</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AggiungiCommentoProdotto</servlet-name>
+		<servlet-class>controller.AggiungiCommentoProdotto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiungiCommentoProdotto</servlet-name>
+		<url-pattern>/aggiungiCommento</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>CarrelloServlet</servlet-name>
+		<servlet-class>controller.CarrelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CarrelloServlet</servlet-name>
+		<url-pattern>/carrello</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RimuoviProdottoDalCarrello</servlet-name>
+		<servlet-class>controller.RimuoviProdottoDalCarrello</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RimuoviProdottoDalCarrello</servlet-name>
+		<url-pattern>/rimuoviDalCarrello</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RimuoviDaConfronto</servlet-name>
+		<servlet-class>controller.RimuoviDaConfronto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RimuoviDaConfronto</servlet-name>
+		<url-pattern>/rimuoviDaConfronto</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RimuoviProdottoDaiPreferiti</servlet-name>
+		<servlet-class>controller.RimuoviProdottoDaiPreferiti</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RimuoviProdottoDaiPreferiti</servlet-name>
+		<url-pattern>/rimuoviDaiPreferiti</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RimuoviProdottoDelVenditore</servlet-name>
+		<servlet-class>controller.RimuoviProdottoDelVenditore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RimuoviProdottoDelVenditore</servlet-name>
+		<url-pattern>/rimuoviProdottoDelVenditore</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RimuoviImmagineProdotto</servlet-name>
+		<servlet-class>controller.RimuoviImmagineProdotto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RimuoviImmagineProdotto</servlet-name>
+		<url-pattern>/rimuoviImmagineProdotto</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ImpostaImmagineComePrincipale</servlet-name>
+		<servlet-class>controller.ImpostaImmagineComePrincipale</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ImpostaImmagineComePrincipale</servlet-name>
+		<url-pattern>/impostaComePrincipale</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+
+	<servlet>
+		<servlet-name>EffettuaLogout</servlet-name>
+		<servlet-class>controller.EffettuaLogout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EffettuaLogout</servlet-name>
+		<url-pattern>/effettuaLogout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListaPreventivo</servlet-name>
+		<servlet-class>controller.ListaPreventivo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaPreventivo</servlet-name>
+		<url-pattern>/prodottiPreventivo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UtenteServlet</servlet-name>
+		<servlet-class>controller.UtenteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UtenteServlet</servlet-name>
+		<url-pattern>/utente</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProfiloVenditore</servlet-name>
+		<servlet-class>controller.ProfiloVenditoreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProfiloVenditore</servlet-name>
+		<url-pattern>/profiloVenditore</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>VenditoreServlet</servlet-name>
+		<servlet-class>controller.VenditoreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VenditoreServlet</servlet-name>
+		<url-pattern>/venditore</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CambiaPasswordUtente</servlet-name>
+		<servlet-class>controller.CambiaPasswordUtente</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CambiaPasswordUtente</servlet-name>
+		<url-pattern>/cambiaPassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CambiaPasswordVenditore</servlet-name>
+		<servlet-class>controller.CambiaPasswordVenditore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CambiaPasswordVenditore</servlet-name>
+		<url-pattern>/cambiaPasswordVenditore</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>AggiornaDatiPersonali</servlet-name>
+		<servlet-class>controller.AggiornaDatiPersonali</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiornaDatiPersonali</servlet-name>
+		<url-pattern>/aggiornaDatiPersonali</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AggiornaDatiPersonaliVenditore</servlet-name>
+		<servlet-class>controller.AggiornaDatiPersonaliVenditore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiornaDatiPersonaliVenditore</servlet-name>
+		<url-pattern>/aggiornaDatiPersonaliVenditore</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>TuttiProdotti</servlet-name>
+		<servlet-class>controller.TuttiProdotti</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TuttiProdotti</servlet-name>
+		<url-pattern>/prodotti</url-pattern>
+	</servlet-mapping>
+
+
+
+
+</web-app>
